@@ -11,10 +11,11 @@ def main(s):
     ans=0
     s=s.lower()
     while  i<len(s):
-        if s[i]=='a' or s[i]=='e' or s[i]=='i' or s[i]=='o' or s[i]=='u':
-            ans+=0
-        else :
-            ans+= 1   
+        if s[i].isalpha():
+            if s[i]=='a' or s[i]=='e' or s[i]=='i' or s[i]=='o' or s[i]=='u':
+                ans+=0
+            else : 
+                ans+= 1   
         i+=1          
     return ans
 print(main('CodecshoolUz'))    
