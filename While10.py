@@ -11,8 +11,7 @@ def main(s):
     while  i<len(s):
         if s[i].isdigit():
             if int(s[i])%2==1:
-                   ans+=1    
+                   ans+=int(s[i])   
         i+=1          
-    sum=ans+i    
-    return sum
-print(main('113540'))
+    return ans
+print(main('3017'))
